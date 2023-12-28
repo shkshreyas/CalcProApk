@@ -12,26 +12,26 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnplus.setOnClickListener {
-            val input1=binding.input1.text.toString().toInt()
-            val input2=binding.input2.text.toString().toInt()
+            val input1=binding.input1.text.toString().toFloat()
+            val input2=binding.input2.text.toString().toFloat()
             binding.textView4.text=(input1+input2).toString()
 
         }
         binding.btnminus.setOnClickListener {
-            val input1=binding.input1.text.toString().toInt()
-            val input2=binding.input2.text.toString().toInt()
+            val input1=binding.input1.text.toString().toFloat()
+            val input2=binding.input2.text.toString().toFloat()
             binding.textView4.text=(input1-input2).toString()
 
         }
         binding.btnmultiply.setOnClickListener {
-            val input1=binding.input1.text.toString().toInt()
-            val input2=binding.input2.text.toString().toInt()
+            val input1=binding.input1.text.toString().toFloat()
+            val input2=binding.input2.text.toString().toFloat()
             binding.textView4.text=(input1*input2).toString()
 
         }
         binding.btndivide.setOnClickListener {
-            val input1=binding.input1.text.toString().toInt()
-            val input2=binding.input2.text.toString().toInt()
+            val input1=binding.input1.text.toString().toFloat()
+            val input2=binding.input2.text.toString().toFloat()
             binding.textView4.text=(input1/input2).toString()
 
         }
